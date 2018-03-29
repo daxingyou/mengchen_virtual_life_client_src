@@ -1,0 +1,6 @@
+<res>
+   <item name="comp/Return.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/Close.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/BottonBlue.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="comp/zhuangtaikuang.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=12,18,11,16" picType="0" scale="0"/>
+</res>
