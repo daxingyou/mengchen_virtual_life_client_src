@@ -20,10 +20,28 @@
 
         private init() {
             //init sth like scenes
+            this.dis.receive(ConstEvent.REPLACE_VIEW, this, this.onReplaceView);
             this.dis.receive(ConstEvent.PUSH_VIEW, this, this.onPushView);
             this.dis.receive(ConstEvent.POP_VIEW, this, this.onPopView);
             this.dis.receive(ConstEvent.POPUP_VIEW, this, this.onPopupView);
             this.dis.receive(ConstEvent.DESTORY_VIEW, this, this.onDestoryView);
+        }
+
+        private onReplaceView(name:string){
+            if(name == null){
+                this.noNameError("on replace view");
+                return;
+            }
+            console.log("SceneController on replace View: ",name);
+            var newView = new view.views[name]();
+            if(newView != null){
+                if(this.currentView != null){
+                    Laya.stage.removeChild(this.currentView);
+                }
+                this.currentView = newView;
+            }
+            Laya.stage.addChild(this.currentView);
+            this.viewPool.push({name,newView});            
         }
 
         private onPushView(name:string) {
@@ -65,7 +83,7 @@
 
             if(this.viewPool.length > 0){
                 this.currentView = this.viewPool[this.viewPool.length-1]["newView"];
-                console.log("SceneController number anfter pop : %d",this.viewPool.length);
+                console.log("SceneController number after pop : %d",this.viewPool.length);
                 var newTmp:laya.ui.View = <laya.ui.View>this.currentView;
                 console.log("SceneController view after pop : %s",newTmp.name);
                 newTmp.x=-720;

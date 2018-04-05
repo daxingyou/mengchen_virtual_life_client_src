@@ -3,6 +3,8 @@
 */
 class ConstEvent{
 
+    static readonly REPLACE_VIEW:string = "REPLACE_VIEW";
+
     static readonly PUSH_VIEW:string = "PUSH_VIEW";
 
     static readonly POP_VIEW:string = "POP_VIEW";

@@ -6,11 +6,24 @@ import Loader = Laya.Loader;
 Laya.MiniAdpter.init();
 //程序入口
 Laya.init(720, 1280);
+//屏幕适配
+Laya.stage.scaleMode = laya.display.Stage.SCALE_FIXED_HEIGHT;
 //激活资源版本控制
 Laya.ResourceVersion.enable("version.json", Handler.create(null, beginLoad), Laya.ResourceVersion.FILENAME_VERSION);
 
 function beginLoad(){
-	Laya.loader.load("res/atlas/comp.atlas", Handler.create(null, onLoaded));
+	var resources = ["app/login_btn.png",
+					"app/home_bgdeep.png",
+					"app/home_bottomcard.png",
+					"app/hslider.png",
+					"app/list2.png",
+					"app/lister1.png",
+					"app/login_pic.png",
+					"app/pix_line.png",
+					"app/topbar.png",
+					"res/atlas/app.atlas",
+					"res/atlas/comp.atlas"];
+	Laya.loader.load(resources, Handler.create(null, onLoaded));
 }
 
 function onLoaded(): void {
@@ -23,5 +36,5 @@ function onLoaded(): void {
 	// testUI.showLoading();
 	// Laya.stage.addChild(testUI);
 
-	Dispatcher.getInstance().send(ConstEvent.PUSH_VIEW,ConstViews.LOADING);
+	Dispatcher.getInstance().send(ConstEvent.PUSH_VIEW,ConstViews.LOGIN);
 }
