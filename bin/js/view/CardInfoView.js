@@ -30,10 +30,56 @@ var view;
                 NetHelper.getInstance().httpGetStockTicker(_this.stockData["stock_code"], _this, _this.onTickerRecived);
                 NetHelper.getInstance().httpGetOrderDepth(_this.stockData["stock_code"], _this, _this.onDepthRecived);
                 NetHelper.getInstance().httpGetOrderHis(_this.stockData["stock_code"], _this, _this.onHistoryRecived);
+                NetHelper.getInstance().httpGetKline(_this.stockData["stock_code"], _this, _this.onKlineRecived);
             }
             _this.refreshInfo();
             return _this;
         }
+        CardInfoView.prototype.onKlineRecived = function (data) {
+            console.log(data);
+            var jsonData = JSON.parse(data);
+            if (jsonData != null) {
+                var chartHight = 206;
+                var offset_x = -2;
+                var offset_y = -3;
+                var space_x = 480 / 4;
+                var points = [];
+                var highest = Number.MIN_VALUE;
+                var lowest = 0;
+                for (var index = 0; index < jsonData.length; index++) {
+                    var element = Number(jsonData[index]);
+                    if (element > highest)
+                        highest = element;
+                }
+                //创建k线图点
+                for (var i = 0; i < jsonData.length; i++) {
+                    var value = Number(jsonData[i]);
+                    var point_x = i * space_x + offset_x;
+                    var point_y = chartHight - (chartHight / (highest * 2) * value);
+                    points.push(point_x);
+                    points.push(point_y);
+                }
+                points.push(480 + offset_x);
+                points.push(chartHight + offset_y);
+                points.push(offset_x);
+                points.push(chartHight + offset_y);
+                if (this.spr_kline != null) {
+                    this.spr_kline.graphics.clear();
+                    this.spr_kline.graphics.drawPoly(2, 1, points, "#095d5d", "#19bcbc", 1);
+                }
+                //获取当前日期
+                var nowDate = new Date();
+                var tmpDate = new Date();
+                var dayTime = 24 * 60 * 60 * 1000;
+                for (var j = 5; j > 0; j--) {
+                    var tmpLabel = this.img_kLines.getChildByName("time" + j);
+                    if (tmpLabel != null) {
+                        tmpDate.setTime(nowDate.getTime() - ((5 - j) * dayTime));
+                        tmpLabel.changeText(tmpDate.toLocaleDateString());
+                    }
+                }
+            }
+        };
         CardInfoView.prototype.onDepthRecived = function (data) {
             var jsonData = JSON.parse(data);
             if (jsonData != null) {
@@ -80,9 +126,6 @@ var view;
             var jsonData = JSON.parse(data);
             if (jsonData != null) {
                 this.list_history.array = jsonData;
-                var sp = new Laya.Sprite();
-                this.img_kLines.addChild(sp);
-                sp.graphics.drawLines(0, 0, [5, 100, 55, 120, 105, 180, 155, 115, 205, 100, 255, 110, 305, 130, 355, 150, 405, 160, 455, 180], "#ff0000", 2);
             }
         };
         CardInfoView.prototype.onOrderComplete = function (data) {

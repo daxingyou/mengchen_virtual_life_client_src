@@ -17,6 +17,15 @@ var view;
             _this.lastCell = null;
             _this.txt_hold.text = UserInfo.UserInfoPriceData.length.toString();
             _this.txt_totalValue.text = UserInfo.TotalPoints.toFixed(2);
+            if (UserInfo.Diff >= 0) {
+                _this.txt_myDiff.color = "#ff0000";
+                _this.txt_myDiff.text = "+";
+            }
+            else {
+                _this.txt_myDiff.color = "#00ff00";
+                _this.txt_myDiff.text = "";
+            }
+            _this.txt_myDiff.text = _this.txt_myDiff.text + (100 * UserInfo.Diff.valueOf()).toFixed(2) + "%";
             _this.list_orders.renderHandler = new Handler(_this, _this.onListRender);
             _this.list_orders.vScrollBarSkin = "";
             _this.tab_orders.selectHandler = new Handler(_this, _this.onTabChanged);

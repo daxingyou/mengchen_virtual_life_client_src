@@ -20,6 +20,7 @@ var UserInfo = /** @class */ (function () {
         UserInfo.TotalPoints = Number(jsonData.rong_yao_points);
         UserInfo.FrozenPoints = Number(jsonData.frozen_points);
         UserInfo.CreateTime = jsonData.created_at;
+        UserInfo.Diff = Number(jsonData.zou_shi);
         UserInfo.UserInfoPriceData = jsonData.stocks;
         UserInfo.printUserInfo();
     };
@@ -46,6 +47,7 @@ var UserInfo = /** @class */ (function () {
     UserInfo.FrozenPoints = 0;
     UserInfo.CreateTime = "";
     UserInfo.UserHead = "app/head.jpg";
+    UserInfo.Diff = 0;
     return UserInfo;
 }());
 //# sourceMappingURL=UserInfo.js.map

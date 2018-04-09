@@ -26,6 +26,7 @@ var ConstGlobal = /** @class */ (function () {
         getOrderDepth: { method: "GET", URI: "/stock/depth", description: "获取某只股票的交易深度" },
         getStockTicker: { method: "GET", URI: "/stock/ticker", description: "获取某只股票的最新成交价" },
         getStockTrend: { method: "GET", URI: "/stock/trend", description: "获取所有股票的趋势（涨跌幅）" },
+        getStockKline: { method: "GET", URI: "/stock/kline", description: "获取股票k线图" },
     };
     return ConstGlobal;
 }());

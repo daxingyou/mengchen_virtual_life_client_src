@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":39,
-    "selecteID":45,
+    "selectedBox":227,
+    "selecteID":226,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -400,16 +400,134 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"var":"img_kLines","skin":"app/list2.png"},
+                            "props":{"var":"img_kLines","skin":"app/list2.png","cacheAsBitmap":true,"cacheAs":"bitmap"},
                             "nodeParent":125,
                             "label":"Image(img_kLines)",
                             "isOpen":true,
-                            "isDirectory":false,
+                            "isDirectory":true,
                             "isAniNode":true,
-                            "hasChild":false,
+                            "hasChild":true,
                             "compId":123,
                             "child":[
-                                ],
+                                {
+                                    "x":60,
+                                    "type":"Image",
+                                    "props":{"y":0,"x":120,"width":1,"skin":"app/kp_line.png","height":206},
+                                    "nodeParent":123,
+                                    "label":"Image",
+                                    "isOpen":true,
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":212,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Image",
+                                    "props":{"y":0,"x":240,"width":1,"skin":"app/kp_line.png","height":206},
+                                    "nodeParent":123,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":213,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Image",
+                                    "props":{"y":0,"x":360,"width":1,"skin":"app/kp_line.png","height":206},
+                                    "nodeParent":123,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":214,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "props":{"y":225,"x":0,"name":"time1","fontSize":16,"color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                                    "nodeParent":123,
+                                    "label":"Label(time1)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":215,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "props":{"y":225,"x":120,"name":"time2","fontSize":16,"color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                                    "nodeParent":123,
+                                    "label":"Label(time2)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":217,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "props":{"y":225,"x":240,"name":"time3","fontSize":16,"color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                                    "nodeParent":123,
+                                    "label":"Label(time3)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":218,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "props":{"y":225,"x":360,"name":"time4","fontSize":16,"color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                                    "nodeParent":123,
+                                    "label":"Label(time4)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":219,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "props":{"y":225,"x":480,"name":"time5","fontSize":16,"color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                                    "nodeParent":123,
+                                    "label":"Label(time5)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":220,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Sprite",
+                                    "props":{"var":"spr_kline","alpha":0.5},
+                                    "nodeParent":123,
+                                    "label":"Sprite(spr_kline)",
+                                    "isOpen":true,
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":227,
+                                    "child":[
+                                        ]
+                                }],
                             "$HIDDEN":false
                         },
                         {
@@ -418,14 +536,13 @@
                             "props":{"y":8,"x":490,"name":"s3"},
                             "nodeParent":125,
                             "label":"Box(s3)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":127,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":0,"width":34,"text":"卖3","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":127,
@@ -438,7 +555,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":42,"width":60,"text":"00.00","name":"price","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#bd3516","align":"center"},
                                     "nodeParent":127,
@@ -451,7 +567,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":106,"width":27,"text":"0","name":"count","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":127,
@@ -471,14 +586,13 @@
                             "props":{"y":40,"x":490,"name":"s2"},
                             "nodeParent":125,
                             "label":"Box(s2)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":130,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":0,"width":34,"text":"卖2","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":130,
@@ -491,7 +605,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":42,"width":60,"text":"00.00","name":"price","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#bd3516","align":"center"},
                                     "nodeParent":130,
@@ -504,7 +617,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":106,"width":27,"text":"0","name":"count","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":130,
@@ -524,14 +636,13 @@
                             "props":{"y":71,"x":490,"name":"s1"},
                             "nodeParent":125,
                             "label":"Box(s1)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":134,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":0,"width":34,"text":"卖1","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":134,
@@ -544,7 +655,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":42,"width":60,"text":"00.00","name":"price","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#bd3516","align":"center"},
                                     "nodeParent":134,
@@ -557,7 +667,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":106,"width":27,"text":"0","name":"count","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":134,
@@ -577,14 +686,13 @@
                             "props":{"y":107,"x":490,"name":"b1"},
                             "nodeParent":125,
                             "label":"Box(b1)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":138,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":0,"width":34,"text":"买1","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":138,
@@ -597,7 +705,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":42,"width":60,"text":"00.00","name":"price","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#bd3516","align":"center"},
                                     "nodeParent":138,
@@ -610,7 +717,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":106,"width":27,"text":"0","name":"count","height":29,"fontSize":20,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                                     "nodeParent":138,

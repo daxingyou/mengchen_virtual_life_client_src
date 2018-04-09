@@ -101,6 +101,9 @@ var NetHelper = /** @class */ (function () {
     NetHelper.prototype.httpGetStockTrend = function (caller, complete, error) {
         this.httpGet(ConstGlobal.HttpValues.getStockTrend, "", caller, complete, error);
     };
+    NetHelper.prototype.httpGetKline = function (args, caller, complete, error) {
+        this.httpGet(ConstGlobal.HttpValues.getStockKline, "?stock_code=" + args, caller, complete, error);
+    };
     NetHelper.getInstance = function () {
         if (NetHelper.Instance == null)
             NetHelper.Instance = new NetHelper();

@@ -11,6 +11,14 @@ module view{
 
             this.txt_hold.text = UserInfo.UserInfoPriceData.length.toString();
             this.txt_totalValue.text = UserInfo.TotalPoints.toFixed(2);
+            if(UserInfo.Diff >= 0 ){
+                this.txt_myDiff.color = "#ff0000";
+                this.txt_myDiff.text = "+";
+            }else{
+                this.txt_myDiff.color= "#00ff00";
+                this.txt_myDiff.text = "";
+            }
+            this.txt_myDiff.text = this.txt_myDiff.text + (100*UserInfo.Diff.valueOf()).toFixed(2) + "%";
 
 			this.list_orders.renderHandler = new Handler(this, this.onListRender);
             this.list_orders.vScrollBarSkin="";

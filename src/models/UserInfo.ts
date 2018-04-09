@@ -40,6 +40,8 @@ class UserInfo{
 
     public static UserHead:string = "app/head.jpg"
 
+    public static Diff:Number = 0;
+
     constructor(){
 
     }
@@ -60,6 +62,7 @@ class UserInfo{
         UserInfo.TotalPoints = Number(jsonData.rong_yao_points);
         UserInfo.FrozenPoints = Number(jsonData.frozen_points);
         UserInfo.CreateTime = jsonData.created_at;
+        UserInfo.Diff = Number(jsonData.zou_shi);
 
         UserInfo.UserInfoPriceData = jsonData.stocks;
 

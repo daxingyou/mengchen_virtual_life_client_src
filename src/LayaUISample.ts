@@ -31,7 +31,7 @@ function beginLoad(){
 
 function onLoaded(): void {
 	//实例UI界面
-	//Laya.Stat.show(Laya.Browser.clientWidth - 120 >> 1, Laya.Browser.clientHeight - 100 >> 1);
+	Laya.Stat.show(Laya.Browser.clientWidth - 120 >> 1, Laya.Browser.clientHeight - 100 >> 1);
 	controllers.SceneController.getInstance();
 	// var testUI = Object.create(window["LoadingView1"].prototype);
 	// console.log("1 testui ",testUI)

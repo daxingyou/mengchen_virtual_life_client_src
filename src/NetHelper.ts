@@ -113,6 +113,10 @@ class NetHelper{
 
     httpGetStockTrend(caller:any, complete:Function, error?:Function){
         this.httpGet(ConstGlobal.HttpValues.getStockTrend, "", caller, complete, error);
+    }
+
+    httpGetKline(args:string, caller:any, complete:Function, error?:Function){
+        this.httpGet(ConstGlobal.HttpValues.getStockKline,"?stock_code="+args,caller,complete,error);
     }             
 
     static getInstance():NetHelper{
