@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":99,
-    "selecteID":115,
+    "selecteID":101,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -290,7 +290,7 @@
                         {
                             "x":45,
                             "type":"Box",
-                            "props":{"y":48,"x":62,"width":74,"renderType":"render","pivotY":19,"pivotX":42,"height":39},
+                            "props":{"y":48,"x":62,"width":74,"visible":false,"renderType":"render","pivotY":19,"pivotX":42,"height":39},
                             "nodeParent":99,
                             "label":"Box",
                             "isOpen":false,
