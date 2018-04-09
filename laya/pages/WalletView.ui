@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":86,
-    "selecteID":88,
+    "selectedBox":1,
+    "selecteID":77,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -15,7 +15,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":0,"x":0,"width":720,"skin":"app/bg2.png","name":"bg","height":1280,"cacheAsBitmap":true,"cacheAs":"bitmap"},
+            "props":{"y":0,"x":0,"width":720,"skin":"app/bg2.png","sizeGrid":"1,1,1,1","name":"bg","height":1280,"cacheAsBitmap":true,"cacheAs":"bitmap"},
             "nodeParent":1,
             "label":"Image(bg)",
             "isOpen":true,
@@ -30,7 +30,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":0,"x":0,"width":720,"skin":"app/bg.png","name":"top","height":310,"cacheAsBitmap":true,"cacheAs":"bitmap"},
+            "props":{"y":0,"x":0,"width":720,"skin":"app/bg.png","sizeGrid":"1,1,1,1","name":"top","height":310,"cacheAsBitmap":true,"cacheAs":"bitmap"},
             "nodeParent":1,
             "label":"Image(top)",
             "isOpen":true,
@@ -42,7 +42,7 @@
                 {
                     "x":30,
                     "type":"Button",
-                    "props":{"y":76,"x":63,"width":70,"top":40,"stateNum":"1","skin":"app/head.jpg","name":"btn_avt","height":70,"anchorY":0.5,"anchorX":0.5},
+                    "props":{"y":76,"x":63,"width":70,"top":40,"stateNum":"1","skin":"app/head.jpg","runtime":"widget.UIButtonProfile","name":"btn_avt","height":70,"anchorY":0.5,"anchorX":0.5},
                     "nodeParent":39,
                     "label":"Button(btn_avt)",
                     "isOpen":true,
@@ -119,7 +119,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96},
+                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96,"cacheAsBitmap":true,"cacheAs":"bitmap"},
                             "nodeParent":79,
                             "label":"Image",
                             "isDirectory":false,
@@ -171,7 +171,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96},
+                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96,"cacheAsBitmap":true,"cacheAs":"bitmap"},
                             "nodeParent":82,
                             "label":"Image",
                             "isDirectory":false,
@@ -223,7 +223,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96},
+                            "props":{"y":0,"x":0,"width":190,"skin":"app/wallet_info.png","sizeGrid":"42,19,16,17","height":96,"cacheAsBitmap":true,"cacheAs":"bitmap"},
                             "nodeParent":86,
                             "label":"Image",
                             "isDirectory":false,
@@ -277,7 +277,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":310,"x":1,"width":720,"skin":"app/bg_sub.png","name":"tag","height":67,"cacheAsBitmap":true,"cacheAs":"bitmap"},
+            "props":{"y":310,"x":1,"width":720,"skin":"app/bg_sub.png","sizeGrid":"1,0,1,0","name":"tag","height":67},
             "nodeParent":1,
             "label":"Image(tag)",
             "isOpen":true,
@@ -289,7 +289,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":129,"text":"代 码","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":160,"text":"代 码","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isOpen":false,
@@ -303,7 +303,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":288,"text":"操 作","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":318,"text":"操 作","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -316,7 +316,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":449,"text":"价 格","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":474,"text":"价 格","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -367,10 +367,48 @@
                     "child":[
                         {
                             "x":45,
+                            "type":"Image",
+                            "props":{"y":50,"x":50,"width":80,"var":"img_head","skin":"app/head.jpg","height":80,"anchorY":0.5,"anchorX":0.5},
+                            "nodeParent":61,
+                            "label":"Image(img_head)",
+                            "isOpen":false,
+                            "isDirectory":true,
+                            "isAniNode":false,
+                            "hasChild":true,
+                            "compId":103,
+                            "child":[
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":40,"x":40,"width":80,"renderType":"mask","pivotY":40,"pivotX":40,"height":80},
+                                    "nodeParent":103,
+                                    "label":"Sprite",
+                                    "isOpen":true,
+                                    "isDirectory":true,
+                                    "isAniNode":false,
+                                    "hasChild":true,
+                                    "compId":104,
+                                    "child":[
+                                        {
+                                            "type":"Circle",
+                                            "props":{"y":40,"x":40,"radius":40,"lineWidth":1,"fillColor":"#ff0000"},
+                                            "nodeParent":104,
+                                            "label":"Circle",
+                                            "isDirectory":false,
+                                            "isAniNode":false,
+                                            "hasChild":false,
+                                            "compId":105,
+                                            "child":[
+                                                ]
+                                        }]
+                                }]
+                        },
+                        {
+                            "x":45,
                             "type":"Text",
-                            "props":{"y":50,"x":129,"width":149,"pivotY":24,"pivotX":74,"name":"code","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":50,"x":162,"width":149,"pivotY":24,"pivotX":74,"name":"code","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                             "nodeParent":61,
                             "label":"Text(code)",
+                            "isOpen":true,
                             "isDirectory":false,
                             "isAniNode":false,
                             "hasChild":false,
@@ -382,7 +420,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":50,"x":293,"width":149,"pivotY":24,"pivotX":74,"name":"action","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":50,"x":320,"width":149,"pivotY":24,"pivotX":74,"name":"action","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                             "nodeParent":61,
                             "label":"Text(action)",
                             "isOpen":true,
@@ -397,7 +435,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":50,"x":453,"width":149,"pivotY":24,"pivotX":74,"name":"price","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":50,"x":474,"width":149,"pivotY":24,"pivotX":74,"name":"price","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                             "nodeParent":61,
                             "label":"Text(price)",
                             "isOpen":false,
@@ -415,7 +453,7 @@
                             "props":{"y":50,"x":625,"width":149,"pivotY":24,"pivotX":74,"name":"count","height":45,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
                             "nodeParent":61,
                             "label":"Text(count)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":false,
                             "isAniNode":false,
                             "hasChild":false,
@@ -455,7 +493,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":232,"x":0,"skin":"app/wallet_line.png"},
+            "props":{"y":232,"x":0,"skin":"app/wallet_line.png","cacheAsBitmap":true,"cacheAs":"bitmap"},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,

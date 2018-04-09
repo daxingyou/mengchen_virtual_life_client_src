@@ -10,6 +10,7 @@ module view{
 
             this.list_stock.selectHandler = new Handler(this, this.onListCellSelected);
             this.list_stock.renderHandler = new Handler(this, this.onListRender);
+            this.list_stock.vScrollBarSkin="";
             
             this.refreshStocksList();
         }

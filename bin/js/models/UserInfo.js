@@ -43,6 +43,7 @@ var UserInfo = /** @class */ (function () {
     UserInfo.Points = 0;
     UserInfo.FrozenPoints = 0;
     UserInfo.CreateTime = "";
+    UserInfo.UserHead = "app/head.jpg";
     return UserInfo;
 }());
 //# sourceMappingURL=UserInfo.js.map

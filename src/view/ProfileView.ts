@@ -8,6 +8,7 @@ module view{
 
             this.list_data.selectHandler = new Handler(this, this.onListCellSelected);
             this.list_data.renderHandler = new Handler(this, this.onListRender);
+            this.list_data.vScrollBarSkin="";
             //Buttons
             this.btn_edit.clickHandler = new Handler(this, this.onEditButtonClicked);
             this.btn_head.clickHandler = new Handler(this, this.onHeadClicked);

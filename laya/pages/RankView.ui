@@ -1,9 +1,9 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":114,
-    "selecteID":119,
-    "props":{"x":0,"width":720,"height":1280,"bottom":0},
+    "selectedBox":1,
+    "selecteID":120,
+    "props":{"y":640,"x":360,"width":720,"height":1280,"bottom":0,"anchorY":0.5,"anchorX":0.5},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -15,7 +15,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":0,"x":0,"width":720,"skin":"app/bg4.png","name":"bg","height":1280},
+            "props":{"y":0,"x":0,"width":720,"skin":"app/bg4.png","sizeGrid":"1,1,1,1","name":"bg","height":1280},
             "nodeParent":1,
             "label":"Image(bg)",
             "isOpen":true,
@@ -119,15 +119,40 @@
                 {
                     "x":30,
                     "type":"Button",
-                    "props":{"x":109,"var":"btn_head","stateNum":"1","skin":"app/btn_avt.png","centerY":0},
+                    "props":{"y":48,"x":145,"width":72,"var":"btn_head","stateNum":"1","skin":"app/btn_avt.png","height":72,"centerY":0,"anchorY":0.5,"anchorX":0.5},
                     "nodeParent":109,
                     "label":"Button(btn_head)",
-                    "isDirectory":false,
+                    "isOpen":true,
+                    "isDirectory":true,
                     "isAniNode":true,
-                    "hasChild":false,
+                    "hasChild":true,
                     "compId":110,
                     "child":[
-                        ]
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":36,"x":36,"width":72,"renderType":"mask","pivotY":36,"pivotX":36,"height":72},
+                            "nodeParent":110,
+                            "label":"Sprite",
+                            "isOpen":false,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":124,
+                            "child":[
+                                {
+                                    "type":"Circle",
+                                    "props":{"y":36,"x":36,"radius":36,"lineWidth":1,"fillColor":"#ff0000"},
+                                    "nodeParent":124,
+                                    "label":"Circle",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":125,
+                                    "child":[
+                                        ]
+                                }]
+                        }]
                 },
                 {
                     "x":30,
@@ -158,7 +183,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":30,"x":583,"width":94,"var":"txt_price","text":"0身价","height":37,"fontSize":30,"font":"Microsoft YaHei","color":"#606266","bold":false},
+                    "props":{"y":30,"x":380,"width":279,"var":"txt_price","text":"0身价","height":37,"fontSize":30,"font":"Microsoft YaHei","color":"#606266","bold":false,"align":"right"},
                     "nodeParent":109,
                     "label":"Text(txt_price)",
                     "isDirectory":false,
@@ -172,7 +197,7 @@
         {
             "x":15,
             "type":"List",
-            "props":{"y":259,"x":0,"width":720,"var":"list_rank","height":1033},
+            "props":{"y":259,"x":0,"width":720,"var":"list_rank","repeatX":1,"height":1033},
             "nodeParent":1,
             "label":"List(list_rank)",
             "isOpen":true,
@@ -184,7 +209,7 @@
                 {
                     "x":30,
                     "type":"Box",
-                    "props":{"width":720,"renderType":"render","name":"list","height":96},
+                    "props":{"y":0,"x":0,"width":720,"renderType":"render","name":"list","height":96},
                     "nodeParent":120,
                     "label":"Box(list)",
                     "isOpen":true,
@@ -209,15 +234,41 @@
                         {
                             "x":45,
                             "type":"Button",
-                            "props":{"x":109,"stateNum":"1","skin":"app/btn_avt.png","name":"head","centerY":0},
+                            "props":{"y":48,"x":145,"width":72,"stateNum":"1","skin":"app/btn_avt.png","name":"head","height":72,"centerY":0,"anchorY":0.5,"anchorX":0.5},
                             "nodeParent":114,
                             "label":"Button(head)",
-                            "isDirectory":false,
+                            "isOpen":true,
+                            "isDirectory":true,
                             "isAniNode":false,
-                            "hasChild":false,
+                            "hasChild":true,
                             "compId":116,
                             "child":[
-                                ]
+                                {
+                                    "x":60,
+                                    "type":"Sprite",
+                                    "props":{"y":36,"x":36,"width":72,"renderType":"mask","pivotY":36,"pivotX":36,"height":72},
+                                    "nodeParent":116,
+                                    "label":"Sprite",
+                                    "isOpen":true,
+                                    "isDirectory":true,
+                                    "isAniNode":false,
+                                    "hasChild":true,
+                                    "compId":122,
+                                    "child":[
+                                        {
+                                            "x":75,
+                                            "type":"Circle",
+                                            "props":{"y":36,"x":36,"radius":36,"lineWidth":1,"fillColor":"#ff0000"},
+                                            "nodeParent":122,
+                                            "label":"Circle",
+                                            "isDirectory":false,
+                                            "isAniNode":false,
+                                            "hasChild":false,
+                                            "compId":123,
+                                            "child":[
+                                                ]
+                                        }]
+                                }]
                         },
                         {
                             "x":45,
@@ -248,7 +299,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":30,"x":583,"width":94,"text":"0身价","name":"price","height":37,"fontSize":30,"font":"Microsoft YaHei","color":"#606266","bold":false},
+                            "props":{"y":30,"x":356,"width":304,"text":"0身价","name":"price","height":37,"fontSize":30,"font":"Microsoft YaHei","color":"#606266","bold":false,"align":"right"},
                             "nodeParent":114,
                             "label":"Text(price)",
                             "isDirectory":false,

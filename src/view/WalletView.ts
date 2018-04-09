@@ -9,7 +9,11 @@ module view{
         constructor(){
             super();
 
+            this.txt_hold.text = UserInfo.UserInfoPriceData.length.toString();
+            this.txt_totalValue.text = UserInfo.Points.toFixed(2);
+
 			this.list_orders.renderHandler = new Handler(this, this.onListRender);
+            this.list_orders.vScrollBarSkin="";
 
 			this.tab_orders.selectHandler = new Handler(this, this.onTabChanged);
 

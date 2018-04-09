@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":90,
-    "selecteID":40,
+    "selectedBox":1,
+    "selecteID":20,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -15,7 +15,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":0,"x":0,"width":720,"skin":"app/bg2.png","name":"bg","height":1280},
+            "props":{"y":0,"x":0,"width":720,"skin":"app/bg2.png","sizeGrid":"1,1,1,1","name":"bg","height":1280},
             "nodeParent":1,
             "label":"Image(bg)",
             "isOpen":true,

@@ -36,6 +36,8 @@ class UserInfo{
 
     public static CreateTime:string = "";
 
+    public static UserHead:string = "app/head.jpg"
+
     constructor(){
 
     }

@@ -17,6 +17,7 @@ var view;
             var _this = _super.call(this) || this;
             _this.list_data.selectHandler = new Handler(_this, _this.onListCellSelected);
             _this.list_data.renderHandler = new Handler(_this, _this.onListRender);
+            _this.list_data.vScrollBarSkin = "";
             //Buttons
             _this.btn_edit.clickHandler = new Handler(_this, _this.onEditButtonClicked);
             _this.btn_head.clickHandler = new Handler(_this, _this.onHeadClicked);

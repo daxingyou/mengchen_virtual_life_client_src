@@ -19,6 +19,7 @@ var view;
             _this.btn_rank.clickHandler = new Handler(_this, _this.onRankClicked);
             _this.list_stock.selectHandler = new Handler(_this, _this.onListCellSelected);
             _this.list_stock.renderHandler = new Handler(_this, _this.onListRender);
+            _this.list_stock.vScrollBarSkin = "";
             _this.refreshStocksList();
             return _this;
         }
