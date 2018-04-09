@@ -33,7 +33,7 @@
                 return;
             }
             console.log("SceneController on replace View: ",name);
-            var newView = new view.views[name]();
+            var newView = new view[name]();
             if(newView != null){
                 if(this.currentView != null){
                     Laya.stage.removeChild(this.currentView);
@@ -51,7 +51,7 @@
             }
             console.log("SceneController on push View: ",name);
 
-            var newView = new view.views[name]();
+            var newView = new view[name]();
             if(newView != null){
                 if(this.currentView != null){
                     var tmp:laya.ui.View = <laya.ui.View>this.currentView;
@@ -100,7 +100,7 @@
                 return;
             }            
             console.log("SceneController on popup View: ",name);
-            var newView = new view.views[name]();
+            var newView = new view[name]();
             var tmp:laya.ui.View = <laya.ui.View>newView;
             tmp.name = name;              
 

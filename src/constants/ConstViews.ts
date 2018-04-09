@@ -18,6 +18,18 @@ class ConstViews{
 
     static readonly STOCK:string = "StockView";
 
+    static readonly WALLET:string = "WalletView";
+
+    static readonly PUBLISH:string = "PublishView";
+
+    static readonly INFOEDIT:string = "InfoEditView";
+
+    static readonly PET:string = "PetView";
+
+    static readonly FRIEND:string = "FriendView";
+
+    static readonly RANK:string = "RankView";
+
     constructor(){
 
     }

@@ -3,11 +3,13 @@ import Handler = Laya.Handler;
 import Loader = Laya.Loader;
 //import loading = view.views.LoadingView
 //初始化微信小游戏
-Laya.MiniAdpter.init();
+//Laya.MiniAdpter.init();
 //程序入口
 Laya.init(720, 1280);
 //屏幕适配
-Laya.stage.scaleMode = laya.display.Stage.SCALE_FIXED_HEIGHT;
+Laya.stage.scaleMode = laya.display.Stage.SCALE_SHOWALL;
+Laya.stage.alignH = laya.display.Stage.ALIGN_CENTER;
+Laya.stage.alignV = laya.display.Stage.ALIGN_MIDDLE;
 //激活资源版本控制
 Laya.ResourceVersion.enable("version.json", Handler.create(null, beginLoad), Laya.ResourceVersion.FILENAME_VERSION);
 
@@ -21,6 +23,7 @@ function beginLoad(){
 					"app/login_pic.png",
 					"app/pix_line.png",
 					"app/topbar.png",
+					"app/wallet_line.png",
 					"res/atlas/app.atlas",
 					"res/atlas/comp.atlas"];
 	Laya.loader.load(resources, Handler.create(null, onLoaded));
@@ -28,7 +31,7 @@ function beginLoad(){
 
 function onLoaded(): void {
 	//实例UI界面
-	Laya.Stat.show(Laya.Browser.clientWidth - 120 >> 1, Laya.Browser.clientHeight - 100 >> 1);
+	//Laya.Stat.show(Laya.Browser.clientWidth - 120 >> 1, Laya.Browser.clientHeight - 100 >> 1);
 	controllers.SceneController.getInstance();
 	// var testUI = Object.create(window["LoadingView1"].prototype);
 	// console.log("1 testui ",testUI)

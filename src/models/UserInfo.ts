@@ -6,6 +6,10 @@ class UserInfo{
 
     public static UserInfoPriceData:Array<any> = [];
 
+    public static UserOrdersYet:Array<any> = [];
+
+    public static UserOrdersDone:Array<any> = [];
+
     public static UserName:string = "";
 
     public static UserId:Number = 0;

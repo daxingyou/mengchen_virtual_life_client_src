@@ -67,3 +67,4 @@ bin/project.config.json
 bin/unpack.json
 bin/version.json
 bin/weapp-adapter.js
+release/

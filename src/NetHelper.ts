@@ -36,7 +36,7 @@ class NetHelper{
     }
 
     httpEditUserInfo(args:string, caller:any, complete:Function, error?:Function){
-        this.httpGet(ConstGlobal.HttpValues.editPlayerInfo, args, caller, complete, error);
+        this.httpPost(ConstGlobal.HttpValues.editPlayerInfo, args, caller, complete, error);
     }
 
     httpPetAction(args:string, caller:any, complete:Function, error?:Function){
@@ -91,8 +91,12 @@ class NetHelper{
         this.httpGet(ConstGlobal.HttpValues.getOrder, "/"+orderID, caller, complete, error);
     }
 
-    httpGetOrders(caller:any, complete:Function, error?:Function){
-        this.httpGet(ConstGlobal.HttpValues.getOrders, "", caller, complete, error);
+    httpGetOrdersYet(caller:any, complete:Function, error?:Function){
+        this.httpGet(ConstGlobal.HttpValues.getOrders, "?status=1,2", caller, complete, error);
+    }
+
+    httpGetOrdersDone(caller:any, complete:Function, error?:Function){
+        this.httpGet(ConstGlobal.HttpValues.getOrders, "?status=3", caller, complete, error);
     }
 
     httpGetOrderHis(code:string, caller:any, complete:Function, error?:Function){
