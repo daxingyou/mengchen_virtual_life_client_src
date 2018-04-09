@@ -12,7 +12,7 @@ module view{
 			this.list_rank.renderHandler = new Handler(this, this.onListRender);
 			// this.list_rank.selectHandler = new Handler(this, this.onListCellSelected);
 
-			var tmp:Array<any> = [{price:UserInfo.Points,name:UserInfo.UserName,rank:1}]
+			var tmp:Array<any> = [{price:UserInfo.TotalPoints,name:UserInfo.UserName,rank:1}]
 			for (var index = 0; index < 20; index++) {
 				var element = {price:200-index,name:"Test"+index,rank:index+1};
 				tmp.push(element);

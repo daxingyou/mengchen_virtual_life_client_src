@@ -20,7 +20,7 @@ var view;
             _this.list_friends.vScrollBarSkin = "";
             _this.list_friends.renderHandler = new Handler(_this, _this.onListRender);
             // this.list_rank.selectHandler = new Handler(this, this.onListCellSelected);
-            var tmp = [{ price: UserInfo.Points, name: UserInfo.UserName, rank: 1 }];
+            var tmp = [{ price: UserInfo.TotalPoints, name: UserInfo.UserName, rank: 1 }];
             for (var index = 0; index < 20; index++) {
                 var element = { price: 200 - index, name: "Test" + index, rank: index + 1 };
                 tmp.push(element);
