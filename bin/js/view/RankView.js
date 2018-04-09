@@ -53,7 +53,7 @@ var view;
         RankView.prototype.refreshUserInfo = function () {
             this.btn_head.skin = UserInfo.UserHead;
             this.txt_name.text = UserInfo.UserName;
-            this.txt_price.text = UserInfo.Points.toFixed(2) + "身价";
+            this.txt_price.text = UserInfo.TotalPoints.toFixed(2) + "身价";
             this.txt_rank.text = "1";
         };
         return RankView;

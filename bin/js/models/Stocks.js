@@ -5,6 +5,7 @@ var Stocks = /** @class */ (function () {
     function Stocks() {
     }
     Stocks.setStocksData = function (data) {
+        console.log(data);
         var jsonData = JSON.parse(data);
         if (jsonData != null) {
             Stocks.data = [];

@@ -32,6 +32,8 @@ class UserInfo{
 
     public static Points:Number = 0;
 
+    public static TotalPoints:Number = 0;
+
     public static FrozenPoints:Number = 0;
 
     public static CreateTime:string = "";
@@ -55,6 +57,7 @@ class UserInfo{
         UserInfo.Introduction = jsonData.intro;
         UserInfo.GamePoints = Number(jsonData.game_points);
         UserInfo.Points = Number(jsonData.points);
+        UserInfo.TotalPoints = Number(jsonData.rong_yao_points);
         UserInfo.FrozenPoints = Number(jsonData.frozen_points);
         UserInfo.CreateTime = jsonData.created_at;
 

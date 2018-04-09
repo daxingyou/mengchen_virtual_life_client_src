@@ -39,10 +39,12 @@ module view{
             var userid:Text = <Text>cell.getChildByName("stockid");
             var price:Text = <Text>cell.getChildByName("price");
             var diff:Text = <Text>cell.getChildByName("diff");
+            var totalPrice:Text = <Text>cell.getChildByName("total_price");
 
             if(null != username) username.text = data["owner"]["nickname"];
             if(null != userid) userid.text = data["stock_code"];
             if(null != price) price.text = Number(data["last_price"]).toFixed(2);
+            if(null != totalPrice) totalPrice.text = Number(data["owner"]["rong_yao_points"]).toFixed(2);
             if(null != diff){
                 let rate = Number(data["changing_rate"]) * 100;
                 let tmp = rate.toFixed(2);

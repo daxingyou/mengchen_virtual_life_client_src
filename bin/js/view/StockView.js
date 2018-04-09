@@ -43,12 +43,15 @@ var view;
             var userid = cell.getChildByName("stockid");
             var price = cell.getChildByName("price");
             var diff = cell.getChildByName("diff");
+            var totalPrice = cell.getChildByName("total_price");
             if (null != username)
                 username.text = data["owner"]["nickname"];
             if (null != userid)
                 userid.text = data["stock_code"];
             if (null != price)
                 price.text = Number(data["last_price"]).toFixed(2);
+            if (null != totalPrice)
+                totalPrice.text = Number(data["owner"]["rong_yao_points"]).toFixed(2);
             if (null != diff) {
                 var rate = Number(data["changing_rate"]) * 100;
                 var tmp = rate.toFixed(2);

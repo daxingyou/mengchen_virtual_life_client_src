@@ -16,7 +16,7 @@ var view;
             var _this = _super.call(this) || this;
             _this.lastCell = null;
             _this.txt_hold.text = UserInfo.UserInfoPriceData.length.toString();
-            _this.txt_totalValue.text = UserInfo.Points.toFixed(2);
+            _this.txt_totalValue.text = UserInfo.TotalPoints.toFixed(2);
             _this.list_orders.renderHandler = new Handler(_this, _this.onListRender);
             _this.list_orders.vScrollBarSkin = "";
             _this.tab_orders.selectHandler = new Handler(_this, _this.onTabChanged);

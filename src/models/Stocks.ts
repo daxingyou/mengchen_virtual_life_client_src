@@ -12,6 +12,7 @@ class Stocks{
     }
 
     static setStocksData(data:any){
+        console.log(data);
         var jsonData = JSON.parse(data);
         if(jsonData != null){
             Stocks.data = [];
