@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":99,
-    "selecteID":101,
+    "selectedBox":81,
+    "selecteID":112,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -33,13 +33,14 @@
             "props":{"y":0,"x":0,"width":720,"skin":"app/bg.png","sizeGrid":"1,1,1,1","name":"top","height":220},
             "nodeParent":1,
             "label":"Image(top)",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":39,
             "child":[
                 {
+                    "x":30,
                     "type":"Button",
                     "props":{"y":130,"x":63,"width":70,"var":"btn_head","top":95,"stateNum":"1","skin":"app/head.jpg","name":"btn_avt","height":70,"anchorY":0.5,"anchorX":0.5},
                     "nodeParent":39,
@@ -51,6 +52,7 @@
                     "compId":45,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
                             "props":{"y":35,"x":35,"width":70,"renderType":"mask","pivotY":35,"pivotX":35,"height":70},
                             "nodeParent":45,
@@ -62,6 +64,7 @@
                             "compId":113,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Circle",
                                     "props":{"y":35,"x":35,"radius":35,"lineWidth":1,"fillColor":"#ff0000"},
                                     "nodeParent":113,
@@ -76,8 +79,9 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Button",
-                    "props":{"y":144,"x":489,"var":"btn_publish","stateNum":"1","skin":"app/btn_useradd.png","name":"btn_add","labelSize":26,"labelPadding":"0,0,0,18","labelFont":"SimHei","labelColors":"#ffffff","labelBold":true,"label":"发布身价"},
+                    "props":{"y":144,"x":489,"var":"btn_publish","stateNum":"1","skin":"app/btn_useradd.png","name":"btn_add","labelSize":26,"labelPadding":"-3,0,0,0","labelFont":"SimHei","labelColors":"#ffffff","labelBold":true,"label":"发布身价"},
                     "nodeParent":39,
                     "label":"Button(btn_publish)",
                     "isDirectory":false,
@@ -88,6 +92,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Button",
                     "props":{"y":30,"x":30,"stateNum":"1","skin":"app/btn_back.png","runtime":"widget.UIButtonBack","name":"btn_back"},
                     "nodeParent":39,
@@ -100,6 +105,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Button",
                     "props":{"y":24,"x":597,"width":85,"var":"btn_edit","name":"btn_edit","labelSize":26,"labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelAlign":"center","label":"编辑","height":48},
                     "nodeParent":39,
@@ -112,6 +118,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":85,"x":119},
                     "nodeParent":39,
@@ -123,6 +130,7 @@
                     "compId":78,
                     "child":[
                         {
+                            "x":45,
                             "type":"Text",
                             "props":{"y":0,"x":0,"width":184,"var":"txt_username","text":"Username","name":"name","height":48,"fontSize":38,"font":"Microsoft YaHei","color":"#ffffff"},
                             "nodeParent":78,
@@ -135,6 +143,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Text",
                             "props":{"y":45,"x":0,"width":78,"var":"txt_userjob","text":"职业：","name":"job","height":34,"fontSize":26,"font":"Microsoft YaHei","color":"#ffffff"},
                             "nodeParent":78,
@@ -147,6 +156,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Text",
                             "props":{"y":80,"x":0,"width":78,"var":"txt_usersex","text":"性别：","name":"sexual","height":34,"fontSize":26,"font":"Microsoft YaHei","color":"#ffffff"},
                             "nodeParent":78,
@@ -175,7 +185,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":17,"x":149,"text":"代码","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":17,"x":149,"text":"代码","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":81,
                     "label":"Label",
                     "isDirectory":false,
@@ -188,7 +198,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":17,"x":380,"text":"现价","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":17,"x":380,"text":"现价","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":81,
                     "label":"Label",
                     "isDirectory":false,
@@ -201,7 +211,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":17,"x":599,"text":"走势","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":17,"x":599,"text":"走势","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":81,
                     "label":"Label",
                     "isDirectory":false,

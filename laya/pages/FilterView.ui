@@ -469,7 +469,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"y":755,"width":300,"stateNum":"1","skin":"app/btn_1.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-8,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"查询","height":115,"centerX":-166,"bottom":505},
+            "props":{"y":745,"width":300,"stateNum":"1","skin":"app/btn_1.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-8,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"查询","height":115,"centerX":-166,"bottom":505},
             "nodeParent":1,
             "label":"Button",
             "isDirectory":false,
@@ -482,7 +482,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"y":755,"width":300,"stateNum":"1","skin":"app/btn_3.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-8,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"买入下单","height":115,"centerX":163,"bottom":505},
+            "props":{"y":745,"width":300,"stateNum":"1","skin":"app/btn_3.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-8,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"买入下单","height":115,"centerX":163,"bottom":505},
             "nodeParent":1,
             "label":"Button",
             "isDirectory":false,
