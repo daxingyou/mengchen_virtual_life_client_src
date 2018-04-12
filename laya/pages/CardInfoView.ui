@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":39,
-    "selecteID":45,
+    "selectedBox":163,
+    "selecteID":208,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -955,28 +955,17 @@
                 {
                     "x":30,
                     "type":"Box",
-                    "props":{"y":40,"x":40,"name":"info"},
+                    "props":{"y":55,"x":25,"name":"info"},
                     "nodeParent":163,
                     "label":"Box(info)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":175,
                     "child":[
                         {
-                            "type":"Image",
-                            "props":{"y":0,"x":0,"width":317,"skin":"app/foot_info.png","sizeGrid":"0,25,0,25","height":48},
-                            "nodeParent":175,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":174,
-                            "child":[
-                                ]
-                        },
-                        {
+                            "x":45,
                             "type":"Box",
                             "props":{"x":24,"name":"have","centerY":0},
                             "nodeParent":175,
@@ -988,8 +977,9 @@
                             "compId":177,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Text",
-                                    "props":{"y":0,"x":0,"width":96,"text":"已持有：","height":34,"fontSize":24,"font":"Microsoft YaHei","color":"#ffffff"},
+                                    "props":{"y":0,"x":0,"width":96,"text":"已持有：","height":34,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff"},
                                     "nodeParent":177,
                                     "label":"Text",
                                     "isDirectory":false,
@@ -1000,8 +990,9 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Text",
-                                    "props":{"y":0,"x":91,"width":73,"var":"txt_holdnum","text":"0","height":34,"fontSize":24,"font":"Microsoft YaHei","color":"#ffffff"},
+                                    "props":{"y":2,"x":115,"width":73,"var":"txt_holdnum","text":"0","height":34,"fontSize":30,"font":"Microsoft YaHei","color":"#ffffff"},
                                     "nodeParent":177,
                                     "label":"Text(txt_holdnum)",
                                     "isDirectory":false,
@@ -1013,6 +1004,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":10,"x":181,"name":"buy","centerY":0},
                             "nodeParent":175,
@@ -1024,6 +1016,7 @@
                             "compId":179,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":0,"width":96,"var":"txt_action","text":"购入：","height":34,"fontSize":24,"font":"Microsoft YaHei","color":"#ffffff"},
                                     "nodeParent":179,
@@ -1036,6 +1029,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Text",
                                     "props":{"y":0,"x":66,"width":73,"var":"txt_buynum","height":34,"fontSize":24,"font":"Microsoft YaHei","color":"#ffffff"},
                                     "nodeParent":179,
@@ -1218,18 +1212,19 @@
                 {
                     "x":30,
                     "type":"Button",
-                    "props":{"y":249,"x":23,"width":310,"var":"btn_buy","stateNum":"1","skin":"app/btn_3.png","sizeGrid":"18,20,17,15","height":120},
+                    "props":{"y":230,"x":23,"width":310,"var":"btn_buy","stateNum":"1","skin":"app/btn_3.png","sizeGrid":"18,20,17,15","height":120},
                     "nodeParent":163,
                     "label":"Button(btn_buy)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":195,
                     "child":[
                         {
+                            "x":45,
                             "type":"Label",
-                            "props":{"y":48,"x":154,"text":"买 入","fontSize":52,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                            "props":{"y":48,"x":154,"text":"买入","fontSize":48,"font":"Microsoft YaHei","color":"#ffffff","bold":true,"anchorY":0.5,"anchorX":0.5,"align":"center"},
                             "nodeParent":195,
                             "label":"Label",
                             "isDirectory":false,
@@ -1243,18 +1238,19 @@
                 {
                     "x":30,
                     "type":"Button",
-                    "props":{"y":249,"x":390,"width":310,"var":"btn_sell","stateNum":"1","skin":"app/btn_2.png","sizeGrid":"18,22,19,17","height":120},
+                    "props":{"y":230,"x":390,"width":310,"var":"btn_sell","stateNum":"1","skin":"app/btn_2.png","sizeGrid":"18,22,19,17","height":120},
                     "nodeParent":163,
                     "label":"Button(btn_sell)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":198,
                     "child":[
                         {
+                            "x":45,
                             "type":"Label",
-                            "props":{"y":48,"x":154,"text":"卖 出","fontSize":52,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0.5,"anchorX":0.5,"align":"center"},
+                            "props":{"y":48,"x":154,"text":"卖出","fontSize":48,"font":"Microsoft YaHei","color":"#ffffff","bold":true,"anchorY":0.5,"anchorX":0.5,"align":"center"},
                             "nodeParent":198,
                             "label":"Label",
                             "isDirectory":false,
@@ -1268,7 +1264,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":105,"x":51,"text":"价 格：","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","cacheAs":"normal"},
+                    "props":{"y":132,"x":51,"text":"价格：","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","cacheAs":"normal"},
                     "nodeParent":163,
                     "label":"Label",
                     "isDirectory":false,
@@ -1281,7 +1277,7 @@
                 {
                     "x":30,
                     "type":"TextInput",
-                    "props":{"y":106,"x":141,"width":250,"var":"ti_price","text":"0.00","skin":"app/textinput_search.png","sizeGrid":"13,13,17,12","height":36,"fontSize":26,"font":"Arial","color":"#7d7d7d","align":"center"},
+                    "props":{"y":119,"x":141,"width":180,"var":"ti_price","text":"0.00","skin":"app/textinput_search.png","sizeGrid":"13,13,17,12","height":60,"fontSize":26,"font":"Arial","color":"#7d7d7d","align":"center"},
                     "nodeParent":163,
                     "label":"TextInput(ti_price)",
                     "isDirectory":false,
@@ -1294,7 +1290,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":174,"x":51,"text":"数 量：","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","cacheAs":"normal","align":"center"},
+                    "props":{"y":132,"x":361,"text":"数量：","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","cacheAs":"normal","align":"center"},
                     "nodeParent":163,
                     "label":"Label",
                     "isDirectory":false,
@@ -1307,13 +1303,26 @@
                 {
                     "x":30,
                     "type":"TextInput",
-                    "props":{"y":174,"x":141,"width":250,"var":"ti_count","text":"1","skin":"app/textinput_search.png","sizeGrid":"13,13,17,12","promptColor":"#7d7d7d","height":36,"fontSize":26,"font":"Arial","color":"#7d7d7d","align":"center"},
+                    "props":{"y":119,"x":451,"width":180,"var":"ti_count","text":"1","skin":"app/textinput_search.png","sizeGrid":"13,13,17,12","promptColor":"#7d7d7d","height":60,"fontSize":26,"font":"Arial","color":"#7d7d7d","align":"center"},
                     "nodeParent":163,
                     "label":"TextInput(ti_count)",
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":205,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":203,"skin":"app/pix_line.png","centerX":0},
+                    "nodeParent":163,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":208,
                     "child":[
                         ]
                 }],

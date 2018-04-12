@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":77,
+    "selecteID":76,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -45,14 +45,13 @@
                     "props":{"y":76,"x":63,"width":70,"top":40,"stateNum":"1","skin":"app/head.jpg","runtime":"widget.UIButtonProfile","name":"btn_avt","height":70,"anchorY":0.5,"anchorX":0.5},
                     "nodeParent":39,
                     "label":"Button(btn_avt)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":45,
                     "child":[
                         {
-                            "x":45,
                             "type":"Sprite",
                             "props":{"y":35,"x":35,"width":70,"renderType":"mask","pivotY":35,"pivotX":35,"height":70},
                             "nodeParent":45,
@@ -64,7 +63,6 @@
                             "compId":90,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Circle",
                                     "props":{"y":35,"x":35,"radius":35,"lineWidth":1,"fillColor":"#ff0000"},
                                     "nodeParent":90,
@@ -81,7 +79,7 @@
                 {
                     "x":30,
                     "type":"Button",
-                    "props":{"y":40,"x":633,"top":40,"stateNum":"1","skin":"app/btn_home.png","runtime":"widget.UIButtonBack","right":0,"name":"btn_back"},
+                    "props":{"top":33,"stateNum":"1","skin":"app/btn_home.png","runtime":"widget.UIButtonBack","right":0,"name":"btn_back"},
                     "nodeParent":39,
                     "label":"Button(btn_back)",
                     "isDirectory":false,
@@ -132,7 +130,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":3,"x":4,"width":183,"text":"持有","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":3,"x":4,"width":183,"text":"持有","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                             "nodeParent":79,
                             "label":"Text",
                             "isDirectory":false,
@@ -184,7 +182,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":3,"x":4,"width":183,"text":"总资产","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":3,"x":4,"width":183,"text":"总资产","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                             "nodeParent":82,
                             "label":"Text",
                             "isDirectory":false,
@@ -236,7 +234,7 @@
                         {
                             "x":45,
                             "type":"Text",
-                            "props":{"y":3,"x":4,"width":183,"text":"走势","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                            "props":{"y":3,"x":4,"width":183,"text":"走势","height":32,"fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                             "nodeParent":86,
                             "label":"Text",
                             "isDirectory":false,
@@ -289,7 +287,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":160,"text":"代 码","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":160,"text":"代码","fontSize":28,"font":"Microsoft YaHei","color":"#8397a9","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isOpen":false,
@@ -303,7 +301,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":318,"text":"操 作","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":318,"text":"操作","fontSize":28,"font":"Microsoft YaHei","color":"#8397a9","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -316,7 +314,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":474,"text":"价 格","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":474,"text":"价格","fontSize":28,"font":"Microsoft YaHei","color":"#8397a9","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -329,7 +327,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":14,"x":622,"text":"数 量","fontSize":28,"font":"Microsoft YaHei","color":"#ffffff","anchorY":0,"anchorX":0.5,"align":"center"},
+                    "props":{"y":14,"x":622,"text":"数量","fontSize":28,"font":"Microsoft YaHei","color":"#8397a9","anchorY":0,"anchorX":0.5,"align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -465,16 +463,17 @@
                         {
                             "x":45,
                             "type":"Button",
-                            "props":{"y":50,"x":772,"width":100,"name":"delete","labelSize":32,"labelColors":"#ffffff","labelAlign":"center","label":"删 除","height":100,"anchorY":0.5,"anchorX":0.5},
+                            "props":{"y":50,"x":772,"width":100,"skin":"app/bg_del.png","name":"delete","labelSize":24,"labelPadding":"-5,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelAlign":"center","label":"删除","height":100,"anchorY":0.5,"anchorX":0.5},
                             "nodeParent":61,
                             "label":"Button(delete)",
-                            "isOpen":false,
+                            "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":false,
                             "hasChild":true,
                             "compId":100,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Rect",
                                     "props":{"width":100,"lineWidth":1,"height":100,"fillColor":"#ff0000"},
                                     "nodeParent":100,
