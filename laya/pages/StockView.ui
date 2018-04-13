@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":39,
-    "selecteID":45,
+    "selectedBox":41,
+    "selecteID":77,
     "props":{"x":0,"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -194,7 +194,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":16,"x":135,"text":"代码","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":16,"x":135,"text":"代码","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -207,7 +207,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":16,"x":270,"text":"荣耀身价","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":16,"x":270,"text":"荣耀身价","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -220,7 +220,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":16,"x":459,"text":"现价","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":16,"x":459,"text":"现价","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,
@@ -233,7 +233,7 @@
                 {
                     "x":30,
                     "type":"Label",
-                    "props":{"y":16,"x":617,"text":"走势","fontSize":26,"font":"Microsoft YaHei","color":"#ffffff","align":"center"},
+                    "props":{"y":16,"x":617,"text":"走势","fontSize":26,"font":"Microsoft YaHei","color":"#8397a9","align":"center"},
                     "nodeParent":41,
                     "label":"Label",
                     "isDirectory":false,

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":24,
+    "selectedBox":41,
+    "selecteID":45,
     "props":{"width":720,"height":1280,"bottom":0},
     "nodeParent":-1,
     "label":"View",
@@ -130,6 +130,19 @@
                     "compId":19,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":54,"x":45,"skin":"app/pic2.png"},
+                    "nodeParent":16,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":43,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -176,10 +189,24 @@
                     "props":{"y":314,"x":94,"width":139,"text":"我的钱包","scaleX":1,"overflow":"hidden","height":39,"fontSize":30,"font":"Microsoft YaHei","color":"303133","bold":true,"align":"center"},
                     "nodeParent":30,
                     "label":"Text",
+                    "isOpen":true,
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":31,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":53,"x":46,"skin":"app/pic1.png"},
+                    "nodeParent":30,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":44,
                     "child":[
                         ]
                 }]
@@ -206,6 +233,19 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":42,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":54,"x":45,"skin":"app/pic3.png"},
+                    "nodeParent":41,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":45,
                     "child":[
                         ]
                 }]

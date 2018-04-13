@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1,
+    "selecteID":142,
     "props":{"y":640,"x":360,"width":720,"name":"enter2","height":1280,"bottom":0,"anchorY":0.5,"anchorX":0.5},
     "nodeParent":-1,
     "label":"View(enter2)",
@@ -190,7 +190,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"y":577,"width":487,"var":"btn_save","stateNum":"1","skin":"app/btn_1.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-5,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"保存","height":115,"centerX":0},
+            "props":{"y":577,"width":487,"var":"btn_save","stateNum":"1","skin":"app/btn_1.png","sizeGrid":"20,20,20,20","labelSize":38,"labelPadding":"-8,0,0,0","labelFont":"Microsoft YaHei","labelColors":"#ffffff","labelBold":true,"labelAlign":"center","label":"保存","height":115,"centerX":0},
             "nodeParent":1,
             "label":"Button(btn_save)",
             "isDirectory":false,
