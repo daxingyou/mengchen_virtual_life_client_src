@@ -120,6 +120,8 @@ var view;
             if (jsonData != null) {
                 this.txt_price.text = Number(jsonData["price"]).toFixed(2);
                 this.ti_price.text = this.txt_price.text;
+                this.txt_highprice.changeText(jsonData["highest_price"]);
+                this.txt_lowprice.changeText(jsonData["lowest_price"]);
             }
         };
         CardInfoView.prototype.onHistoryRecived = function (data) {
